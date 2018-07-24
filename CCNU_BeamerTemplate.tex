@@ -4,7 +4,7 @@
 
 %%%%-----导入宏包-----%%%%
 \usepackage{ccnu}			%导入 CCNU 模板宏包
-\usepackage{ctex}			%导入 ctex 宏包，添加中文支持
+%\usepackage{ctex}			%导入 ctex 宏包，添加中文支持
 \usepackage{amsmath,amsfonts,amssymb,bm}   %导入数学公式所需宏包
 \usepackage{color}			 %字体颜色支持
 \usepackage{graphicx,hyperref,url}
@@ -16,30 +16,31 @@
 \beamertemplateballitem		%设置 Beamer 主题
 
 %%%%------------------------%%%%%
-\catcode`\。=\active         %或者=13
-\newcommand{。}{．}				
+%\catcode`\。=\active         %或者=13
+%\newcommand{。}{．}				
 %将正文中的“。”号转换为“.”。中文标点国家规范建议科技文献中的句号用圆点替代
 %%%%%%%%%%%%%%%%%%%%%
 
 %%%%----首页信息设置----%%%%
-\title[ 华中师大 Beamer 模板]{华中师范大学 Beamer 模板}
+\title[ Transport Geography]{The Geography of Transportation Systems}
 \subtitle{——这里是副标题}			
 %%%%----标题设置
 
 
-\author[Kang Jin-Wen]{
-  康锦文 \\\medskip
-  {\small \url{kangjinwen@mails.ccnu.edu.cn}} \\
-  {\small \url{http://www.ccnu.edu.cn/}}}
+\author[Jing Chen]{
+  Jing Chen \\\medskip
+  %{\small \url{kangjinwen@mails.ccnu.edu.cn}} \\
+  %{\small \url{http://www.ccnu.edu.cn/}}
+}
 %%%%----个人信息设置
   
 \institute[IOPP]{
-  粒子物理研究所 \\ 
-  华中师范大学}
+  College of Urban and Environmental Sciences \\ 
+  Central China Normal University}
 %%%%----机构信息
 
-\date[Dec. 01 2016]{
-  2016年12月01日}
+\date[\today]{
+  \today}
 %%%%----日期信息
   
 \begin{document}
@@ -48,41 +49,41 @@
 \titlepage
 \end{frame}				%生成标题页
 
-\section{提纲}
+\section{Outline}
 \begin{frame}
-\frametitle{提纲}
+\frametitle{Outline}
 \tableofcontents
 \end{frame}				%生成提纲页
 
-\section{介绍}
+\section{Introduction}
 \begin{frame}
-  \frametitle{介绍}
+  \frametitle{Introduction}
 
   \begin{itemize}
-    \item {编译方式}
+    \item {Methods}
 	    \begin{itemize}
-	    	\item  推荐安装完整版的 TeXLive
-	    	\item 使用 \XeLaTeX 编译
+	    	\item  TeXLive
+	    	\item  \XeLaTeX 
 	    \end{itemize}
-    \item 请参考 \LaTeX 和 Beamer 用户文档 
+    \item Refer to \LaTeX and Beamer
     
-    \item 行内数学公式示例 $\sin^2 \theta + \cos^2 \theta = 1$
-    \item {行间数学公式示例 \begin{equation}
+    \item Equation 1 $\sin^2 \theta + \cos^2 \theta = 1$
+    \item {Equation 2 \begin{equation}
 	    y_{1}=\int \sin x\, {\rm d}x
     \end{equation}	 }   
-    \item 基于“华大绿”颜色 \url{http://www.ccnu.edu.cn/}
+    \item Based on ``CCNU GREEN'' \url{http://www.ccnu.edu.cn/}
   \end{itemize}
 \end{frame}
 
-\section{内置环境}
+\section{Environment}
 \begin{frame}
-  \frametitle{内置环境}
+  \frametitle{Environment}
 	\begin{block}{Slides with \LaTeX}
 	    Beamer offers a lot of functions to create nice slides using \LaTeX.
 	  \end{block}
 	
 	  \begin{block}{The basis}
-	    内部使用以下主题
+	    Themes
 	    \begin{itemize}
 	      \item split
 	      \item whale
@@ -93,7 +94,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{带数字列表}
+  \frametitle{Numbers}
 	 \begin{enumerate}
 	    \item This just shows the effect of the style
 	    \item It is not a Beamer tutorial
@@ -102,9 +103,9 @@
 	  \end{enumerate}
 \end{frame}
 
-\section{结论}
+\section{Conclusions}
 \begin{frame}
-  \frametitle{结论}
+  \frametitle{Conclusions}
 
   \begin{itemize}
     \item Easy to use
@@ -112,8 +113,8 @@
   \end{itemize}
 \end{frame}
 
-\section{参考文献}
-\begin{frame}{参考文献}
+\section{References}
+\begin{frame}{References}
 \begin{thebibliography}{99} 
 \bibitem{zhao1} Yi~Zhao, {\sl An introduction to X}, Sep.~15, 2015
 \bibitem{qian2} Er~Qian, San~Sun, 
